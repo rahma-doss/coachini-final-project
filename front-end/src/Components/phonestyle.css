@@ -1,0 +1,19 @@
+.slick-list{
+    height: 609px;
+}
+.slick-track {
+    width: 3102px;
+     opacity: 1
+    }
+
+    .slick-slide {
+    outline: none; 
+    width: 282px;
+     position: relative;
+      left: 0px; 
+      opacity: 0; 
+      transition: opacity 1000ms ease 0s, visibility 1000ms ease 0s;
+}
+
+.slick-current {
+    outline: none; width: 282px; position: relative; left: -282px; opacity: 1; transition: opacity 1000ms ease 0s, visibility 1000ms ease 0s;}

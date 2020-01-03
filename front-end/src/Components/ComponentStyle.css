@@ -1,0 +1,256 @@
+
+/* acceuil css */
+.backgroundImg{
+    background-image: url(https://images.contentstack.io/v3/assets/blt45c082eaf9747747/bltba26f248af1a5ffe/5de0bb643f764502b48c2520/Hell_week_update_head.jpg?format=pjpg&auto=webp&fit=crop&quality=76&width=1232&height=496);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    }
+
+
+.sf-bnr-text strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0 0 25px;
+    color: #fff;
+}
+.conteneur{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 120px !important;
+    padding-bottom: 50px !important;
+}
+.sf-search-form-element{
+    padding-bottom: 120px !important;
+}
+.type-search{
+ margin: auto;  
+} 
+
+
+.Part1-text h1{
+    /* text-align: center; */
+    /* margin-top: 5%; */
+    line-height: 40px;
+    /* position: relative; */
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white
+}
+
+    .Part1-text p{
+    /* text-align: center; */
+        /* margin-top: 2%; */
+       color:  #808080;
+       /* position: absolute; */
+    }
+
+    .container{
+         width: 60%;
+         display: flex;
+justify-content: space-between;  
+   }
+
+.container h5 {
+    color: gray;
+}
+.container li {
+    color: white;
+}
+
+
+footer{
+    width: 100%;
+    margin-top: 5%;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+}    
+.icon{
+    width: 40%;
+}
+ 
+.section-main{
+position: relative;
+width: 100%;
+/* height: 400px; */
+background-color: #222222;}
+
+/* .section-main::before {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform-origin: right top;
+    transform: skewY(4.5deg);
+    background: inherit;
+    ;}  */
+
+    .backgroundImg:before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left:0%;
+        width: 100%;
+        height: 100%;
+        background: #222222;
+        transform-origin: right;
+        transform: skewY(8deg);
+    }
+    /* img{
+        display: block;
+         /* width: 100%; */
+    /* } */
+    
+
+/* ._2dRG4k0fhnnA {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+._2dRG4k0fhnnA ._142N4NSdSpnf {
+    width: 44%;
+    flex-shrink: 0;
+    transform-origin: center left;
+    border-radius: 9px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.7);
+}
+._142N4NSdSpnf {
+    position: relative;
+    overflow: hidden;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+._1h-OEwBSav_q {
+    display: block;
+    position: relative;
+}  */
+
+.img1{
+    width: 25%;
+    z-index: 8;
+    transition: opacity .4s;
+}
+.img2{
+    width: 30%;
+    z-index: 9;
+    border-radius: 5%;
+    margin-right: -5%;
+}
+
+.img3{
+    width: 33%;
+    z-index:10;
+     border-radius: 5%;
+    margin-right: -5%;
+} 
+.carousel{
+    width: 65%;
+}
+
+.Part1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.Part2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.phone{
+    width: 40%;
+    margin-top: -13%;
+}
+.phone img{
+    height: 90%;
+}
+.Part1-text{
+    width: 50%;
+    margin-left: 3%;
+}
+
+.Part2-text{
+    width: 30%;
+}
+
+.Part2-text h1{
+    color: white;
+}
+.Part2-text p{
+    color:gray;
+}
+
+.Part2-button{
+    background-color: #003ec9;
+    border-radius: 5px ;
+    border: solid 1px #003ec9;
+}
+.section2{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.section2-text{
+    width: 50%;
+}
+.section2-phone{
+    width: 50%;
+    display: flex;
+}
+.section2-phone img{
+    width: 50%;
+}
+
+._1XVM6lKzMxUy {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    text-align: left;
+}
+
+.phone3{
+   display: block; 
+   width: 100%;
+}
+._3RJfXWFjUmAw {
+    margin-right: 80px;
+    order: -1;
+}
+
+._213Wj9jgMCpb {
+    padding: 128px 32px;
+}
+._2jAYT5-QD7Fx {
+    margin: 0 auto;
+    flex-basis: 50%;
+    max-width: 508px;
+}
+
+._1XVM6lKzMxUy>.rZz0PEwmg2zd {
+    display: none;
+}
+
+._3RJfXWFjUmAw {
+    margin-right: 80px;
+    order: -1;
+}
+._6y6Zv9Z9asx7[href] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
