@@ -1,5 +1,5 @@
 import React from 'react'
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView } from 'mdbreact'
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer } from 'mdbreact'
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
@@ -44,15 +44,18 @@ class FullPageIntroWithNonFixedTransparentNavbar extends React.Component {
                                         <MDBNavLink to="/Activités"><strong>Spécialités</strong></MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
-                                        <MDBNavLink to="#"><strong>Objectifs</strong></MDBNavLink>
-                                    </MDBNavItem>
-                                    <MDBNavItem>
                                         <MDBNavLink to="/Boutique"><strong>La boutique</strong></MDBNavLink>
                                     </MDBNavItem> <MDBNavItem>
                                         <MDBNavLink to="/Blog"><strong>Blog</strong></MDBNavLink>
                                     </MDBNavItem>
                                     <MDBNavItem>
                                         <MDBNavLink to="#"><strong>Connexion</strong></MDBNavLink>
+                                    </MDBNavItem>
+                                    <MDBNavItem>
+                                        <MDBNavLink to="#"><strong>Register</strong></MDBNavLink>
+                                    </MDBNavItem>
+                                    <MDBNavItem>
+                                        <MDBNavLink to="#"><strong>Login</strong></MDBNavLink>
                                     </MDBNavItem>
 
                                 </MDBNavbarNav>

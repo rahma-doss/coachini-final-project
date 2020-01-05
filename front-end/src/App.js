@@ -11,6 +11,9 @@ import Boutique from './Components/Boutiques/ Boutique';
 //import Connexion from './Components/Connex/Connexion';
 // import Footer from './Components/Foter/Footer';
 import Description from './Components/Coach/Description';
+import Alerts from './Components/Alert/Alerts'
+import Login from './Components/Login'
+import Register from './Components/Register'
 
 
 
@@ -20,20 +23,20 @@ import Description from './Components/Coach/Description';
 function App() {
   return (
     <BrowserRouter>
-        {/* <Acceuil/> */}
+      {/* <Acceuil/> */}
+<Alerts/>
+      <Switch>
+        <Route exact path="/" component={Accueil} />
+        <Route exact path="/Coachs" component={CoachsList} />
+        <Route path="/Description/:id" component={Description} />
+        <Route exact path="/Activités" component={Activités} />
+        <Route exact path="/Blog" component={Blog} />
+        <Route exact path="/Boutique" component={Boutique} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/login" component={Login} />
+      </Switch>
+    
 
-        {/* <div className="container"> */}
-        <Switch>
-          <Route exact path="/" component={Accueil} />
-          <Route exact path="/Coachs" component={CoachsList} />
-          <Route path="/Description/:id" component={Description} />
-          <Route exact path="/Activités" component={Activités} />
-          <Route exact path="/Blog" component={Blog} />
-          <Route exact path="/Boutique" component={Boutique} />
-        {/*<Route exact path="/Connexion" component={Connexion} />*/}
-        </Switch>
-        {/* </div> */}
-      
     </BrowserRouter>
 
   );
