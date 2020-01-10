@@ -1,5 +1,3 @@
-
-
 const initialState = [
     {
         id:"0",
@@ -30,7 +28,6 @@ const initialState = [
         Video: "https://www.youtube.com/embed/QqekpFn_NtQ",
         Tarifs:"45d par seance",
         Feedback:"J´ai eu la chance de travailler avec Maha durant la saison cadet 2016-2017. Dès l´entame de la saison, Maha a fait preuve d´un engouement et d´une application énorme. Elle nous a apporté ses connaissances de préparateur physique, qu´elle a su rendre ludique et abordable à ces jeunes sportifs, dans les 40mn qui lui était impartis durant les pratiques."
-
     },
     {
         id:"2",
@@ -76,7 +73,6 @@ const initialState = [
         Video: "https://www.youtube.com/embed/NH7-Dv2k09E",
         Tarifs:"60d par seance",
         Feedback:"J´ai rencontré Mohamed et avons commencé l´entraînement à raison d´une fois par semaine. Nous avons beaucoup travaillé la résistance à l´effort par des exercices cardio et de renforcement. En quelque mois ma forme est revenue et mon corps se remodelait visiblement. Merci Mohamed!"
-
     },
     {
         id:"5",
@@ -109,13 +105,10 @@ const initialState = [
         Feedback:"Mona: Ones est très à l écoute, c´est un fin psychologue et un sacré COACH ! elle me pousse toujours au delà de mes limites et mes efforts payent car je vois mon corps se dessiner. Elle est sérieux et surtout très professionnel!"
     },
 ]
-
 const CoachReducer = (state = initialState, action)=>{
     switch (action.type) {
         default:
       return state;
     }
-
 }
-
 export default CoachReducer;

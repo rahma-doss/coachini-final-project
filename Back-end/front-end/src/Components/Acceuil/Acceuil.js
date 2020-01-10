@@ -3,13 +3,19 @@ import Navbar from  '../Navbar/Navbar'
 import Main from '../Main'
 import Section2 from '../sectiontest'
 import '../ComponentStyle.css';
+import {connect} from 'react-redux'
+import { loadUser } from '../../actions/AuthenAction';
+import { Link } from 'react-router-dom';
 
 class Accueil extends React.Component {
+    componentDidMount (){
+        this.props.loadUser()
+    }
     render() {
         return (<main>
             <div className="backgroundImg">
 
-                <Navbar />
+                <Navbar bg={false}/>
                 {/* <video src='https://www.youtube.com/watch?v=Bdo_I-4GF5M' type='video/mp4'></video> */}
                 <div className="sf-bnr-text text-center">
                     <div className="conteneur">
@@ -23,7 +29,7 @@ class Accueil extends React.Component {
                     <div className="category-select d-flex">
 
                         <div className="type-search">
-                            <input type="submit" value="je démarre mon entrainement" class="btn btn-block btn-primary " />
+                         <Link to={`/Formulaire`} >  <input type="button" value="je démarre mon entrainement" class="btn btn-block btn-primary " /> </Link>
                         </div>
 
                     </div>
@@ -34,10 +40,9 @@ class Accueil extends React.Component {
 
             <Main />
             <Section2/>
-
         </main>
         )
     }
 }
 
-export default Accueil
+export default connect (null, {loadUser}) (Accueil)

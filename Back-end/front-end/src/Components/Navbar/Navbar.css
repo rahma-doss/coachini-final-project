@@ -5,3 +5,6 @@ li{
 .nav{
     background: transparent!important;
   }
+.secondary-nav{
+    background: black;
+  }

@@ -25,7 +25,7 @@ router.post('/', [
     User.findOne({ email })
         .then(user => {
             if (user) {
-                res.json({ msg: 'User already exists!!' })
+                res.status(400).json({ msg: 'User already exists!!' })
             } else {
                 user = new User({
                     firstname,
@@ -56,7 +56,7 @@ router.post('/', [
                 })
             }
         })
-        .catch(err => console.log(err.message))
+        .catch(err => console.err(err.message))
 })
 
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './stylecoach.css';
-
-
 const CoachCard = props => {
     return (
         <div className="container cardContainer">
@@ -13,7 +11,6 @@ const CoachCard = props => {
                             <img src={props.coach.Image} alt="personal profile"  className='image-card'/>
                         </div>
                         <div className="card-content">
-                            
                             <span className="card-title"> <h3>{props.coach.FirstName} {props.coach.LastName}</h3> </span>
                             <span className="card-title"> <h5>{props.coach.Specialite}</h5></span>
                             <span className="card-title"> <h5>{props.coach.Ville}</h5></span>
@@ -21,16 +18,11 @@ const CoachCard = props => {
                         <div className="card-action">
                         <Link  to={`/Description/${props.coach.id}`}>Plus D'info </Link>
                         <Link  to={`/Feedback/${props.coach.id}`}> Feedback</Link>
-
-
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
     );
 }
-
 export default CoachCard;

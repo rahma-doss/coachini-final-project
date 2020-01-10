@@ -2,24 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './stylecoach.css';
-
-
 class Description extends Component {
     constructor(props) {
         super(props)
         this.state = {
         }
     }
-
     componentDidMount() {
         this.setState(
             this.props.coachs.filter(el => el.id == this.props.match.params.id)[0]
         )
     }
-
     render() {
         return (
-
             <div>
                 <section id='' class='pt-small'>
                     <div class='container'>
@@ -40,10 +35,9 @@ class Description extends Component {
                         <div class='col-md-6'>
                             <img class='img-responsive img-thumbnail img' src={this.state.Image} alt='Coach Coachini' width= "540px" height="540px"/>
                             <div >
-                            <Link className="btn btn-info" to ='/CommentsForm'>Ajouter votre avis 😎 </Link>
+                            <Link className="btn btn-info" to ='/CommentsForm'>Ajouter votre avis :lunettes_de_soleil: </Link>
                         </div>
                         </div>
-                        
                         <div class='col-md-6'>
                             <h2 class='no-mt font-weight-bold'>Pr&eacute;sentation</h2>
                             <p class="text-justify font-weight-normal ">{this.state.presentation}</p>
@@ -69,10 +63,8 @@ class Description extends Component {
                                 <li className="list-group-item">
                                     <h5 class="text-dark"><strong>Tarifs :</strong> {this.state.Tarifs}</h5>
                                 </li>
-
                             </ul>
                             <li className="list-group-item">
-
                                 <div class='col-md-12 pt-small pb-small'>
                                     <div class='embed-responsive embed-responsive-16by9'>
                                         <iframe class='embed-responsive-item' width="560" height="315" src={this.state.Video} frameborder="1" allowfullscreen></iframe>
@@ -80,31 +72,15 @@ class Description extends Component {
                                 </div>
                             </li>
                         </div>
-
-
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
             </div>
         );
     }
 }
-
 const mapStateToProps = state => {
     return {
         coachs: state.CoachReducer,
     }
 }
-
-
 export default connect(mapStateToProps, null)(Description);

@@ -17,7 +17,8 @@ router.get('/', auth, (req, res) => {
     // res.send('get user logged in!')
     User.findById(req.user.id)
     .then(user=> res.json(user))
-    .catch(err=>console.log(err.message))
+    .catch(err=>{console.log(err.message) 
+        res.status(500).send('Server Error')})
 })
 
 //Login the user

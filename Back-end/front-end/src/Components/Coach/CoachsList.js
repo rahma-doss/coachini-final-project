@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import CoachCard from './CoachCard';
 import SpecialiteSearch from './SpecialiteSearch';
 import './stylecoach.css'
-
-
 const CoachList = ({ coachs, SpecialiteSearched }) => {
     return (
         <div>
@@ -19,24 +17,16 @@ const CoachList = ({ coachs, SpecialiteSearched }) => {
                     coachs.filter(
                         coach =>
                             coach.Specialite.toLocaleLowerCase().includes(SpecialiteSearched.toLocaleLowerCase().trim())
-
                     ).map(coach => <CoachCard coach={coach} />)
                 }
             </div>
         </div>
     );
-
 }
 const mapStateToProps = state => {
     return {
         coachs: state.CoachReducer,
         SpecialiteSearched: state.SpecialiteFiterReducer,
-
     };
 };
-
-
-
 export default connect(mapStateToProps, null)(CoachList);
-
-
