@@ -1,0 +1,38 @@
+ .container {
+    float:none; /* disable the float */
+    display: inline-block; /* make blocks inline-block */
+    text-align: initial; /* restore text-align to default */
+    
+  } 
+
+  .cardContainer{
+    max-width: 350px !important ;
+  }
+ .col{
+
+  min-height: 525px;  
+ } 
+.listCoachs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-card{
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* .img-thumbnail{
+  width: 540px;
+  height: 540px;
+} */
+
+/* .img{
+  width: 540px;
+  height: 540px
+} */
+
+.btn{
+  justify-content: center;
+}

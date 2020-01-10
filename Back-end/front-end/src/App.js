@@ -18,6 +18,8 @@ import setAuthToken from './utiles/setAuthToken'
 import FooterR from './Components/Foter/FooterR'
 import Formulaire from './Components/Formulaire/FormulaireClient'
 import Step2 from './Components/Formulaire/Step2'
+import Feedback from './Components/Coach/Feedback';
+import CommentsForm from './Components/Coach/CommentsForm';
 
 if(localStorage.token){
   setAuthToken(localStorage.token)
@@ -43,7 +45,8 @@ class App extends React.Component {
         <Route exact path="/login" component={Login} />
         <Route exact path="/Formulaire" component={Formulaire} />
         <Route exact path="/Step2" component={Step2} />
-
+        <Route path="/Feedback/:id" component={Feedback} />
+          <Route path="/CommentsForm/" component={CommentsForm}/>
       </Switch>
     
 

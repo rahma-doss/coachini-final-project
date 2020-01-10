@@ -1,0 +1,13 @@
+.pt-small{
+    display: flex;
+}
+.centerElements{
+    display: flex;
+    flex-direction: column;
+}
+.miniImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
