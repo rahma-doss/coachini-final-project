@@ -1,0 +1,29 @@
+.blog-card{
+    width: 290px;
+    margin : 20px;
+}
+.custom-card h3 {
+color: darkslateblue;
+text-decoration: darksalmon;
+font-size: x-large;
+}
+.custom-card p {
+    color: lightslategray;
+}
+.img-des {
+    max-height: 250px;
+    min-height:  100px; 
+}
+.img-blog{
+    max-height: 150px;
+    min-height:  100px ;
+}
+.btn[class*="btn-outline-"] {
+    width: 124px;
+}
+/* a{
+    padding: 0 !important;
+} */
+.tc{
+    color: #2196f3!important;
+}

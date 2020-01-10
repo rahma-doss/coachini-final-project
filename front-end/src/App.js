@@ -5,12 +5,13 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CoachsList from './Components/Coach/CoachsList';
 import Activités from './Components/Activits/Activités';
-import Blog from './Components/Blogs/Blog';
+import BlogComponent from './Components/BlogsComponent/BlogComponent';
 import Boutique from './Components/Boutiques/ Boutique';
 //import CoachCard from './Components/Coach/CoachCard';
 //import Connexion from './Components/Connex/Connexion';
 // import Footer from './Components/Foter/Footer';
 import Description from './Components/Coach/Description';
+import Article from './Components/Description_Blog/Article'
 
 
 
@@ -27,8 +28,9 @@ function App() {
           <Route exact path="/" component={Accueil} />
           <Route exact path="/Coachs" component={CoachsList} />
           <Route path="/Description/:id" component={Description} />
+          <Route path="/article/:id" component={Article} />
           <Route exact path="/Activités" component={Activités} />
-          <Route exact path="/Blog" component={Blog} />
+          <Route exact path="/Blog" component={BlogComponent} />
           <Route exact path="/Boutique" component={Boutique} />
         {/*<Route exact path="/Connexion" component={Connexion} />*/}
         </Switch>
