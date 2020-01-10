@@ -11,10 +11,8 @@ import Boutique from './Components/Boutiques/ Boutique';
 //import Connexion from './Components/Connex/Connexion';
 // import Footer from './Components/Foter/Footer';
 import Description from './Components/Coach/Description';
-
-
-
-
+import Feedback from './Components/Coach/Feedback';
+import CommentsForm from './Components/Coach/CommentsForm';
 
 
 function App() {
@@ -22,17 +20,19 @@ function App() {
     <BrowserRouter>
         {/* <Acceuil/> */}
 
-        {/* <div className="container"> */}
+         {/* <div className="container">  */}
         <Switch>
           <Route exact path="/" component={Accueil} />
           <Route exact path="/Coachs" component={CoachsList} />
           <Route path="/Description/:id" component={Description} />
-          <Route exact path="/Activités" component={Activités} />
+          <Route path="/Feedback/:id" component={Feedback} />
+          <Route path="/CommentsForm/" component={CommentsForm}/>
+          <Route exact path="/Activités" component={Activités} />          
           <Route exact path="/Blog" component={Blog} />
           <Route exact path="/Boutique" component={Boutique} />
         {/*<Route exact path="/Connexion" component={Connexion} />*/}
         </Switch>
-        {/* </div> */}
+       {/* </div>  */}
       
     </BrowserRouter>
 
