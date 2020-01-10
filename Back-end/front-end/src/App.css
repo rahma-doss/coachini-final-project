@@ -1,0 +1,22 @@
+.card-content{
+    display: flex;
+    flex-direction: column;
+  }
+html , body{
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.register {
+  flex: 1 0 auto;
+  min-height :431px;
+}
+.formRegister{
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  flex-shrink: 0;
+}

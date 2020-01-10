@@ -1,0 +1,25 @@
+.Form {
+    background-image: url(https://freeletics-assets.imgix.net/images/buying-page-campaigns/ny2020-ttn-male-desktop.jpg);
+    height: 160vh;
+} 
+.card{
+    width: 26%;
+    margin: auto;
+    background-color : transparent;
+}
+
+.button{
+height: 7rem;
+}
+.coll{
+    padding-top: 10%;
+}
+/* input{
+    background: #2196f3;
+}
+
+input:hover{
+color: #255784;
+background: #2196f3;
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3 ;
+} */
