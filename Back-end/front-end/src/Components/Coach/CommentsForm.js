@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { CommentsAdd } from '../../actions/CommentsAction';
+import CommentList from './CommentList'
+import uuid from 'uuid';
 
 class CommentsForm extends Component {
     constructor(props) {
@@ -29,9 +31,10 @@ class CommentsForm extends Component {
                 </form>
                 <input
                     type="button"
-                    value="Comment ➤"
-                    onClick={() => { this.props.addcomment(this.state) }}
+                    value="Comment "
+                    onClick={() => { this.props.addcomment({...this.state , id : uuid(), idCoach: this.props.match.params.id}) }}
                 />
+                <CommentList/>
             </div>
         );
     }
