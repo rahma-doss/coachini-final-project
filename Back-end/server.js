@@ -22,6 +22,8 @@ mongoose.connect(db, { useUnifiedTopology: true , useNewUrlParser: true },(err)=
 
 app.use('/api/users', require('./routes/users'))
 app.use('/api/auth', require('./routes/auth'))
+app.use('/api/Coachs', require('./routes/Coachs'))
+
 
 
 app.listen(5000, ()=> console.log('server is listening on port 5000...'))

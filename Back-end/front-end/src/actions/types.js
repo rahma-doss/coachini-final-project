@@ -1,5 +1,7 @@
+//samira
 export const SET_SPECIALITE_FILTER = "SET_SPECIALITE_FILTER";
 export const ADD_COMMENT = "ADD_COMMENT"
+export const GET_COACHS = "GET_COACHS";
 
 
 

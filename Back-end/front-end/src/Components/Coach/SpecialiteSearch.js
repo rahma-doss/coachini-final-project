@@ -2,9 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { specialiteFilter} from '../../actions/SpecialiteAction';
 
-
-
-
 const SpecialiteSearch = ({ value, onChangeText }) => {
     return (
         <div className="container">
@@ -17,10 +14,6 @@ const SpecialiteSearch = ({ value, onChangeText }) => {
 
             </div>
         </div>
-
-
-
-
     );
 }
 const mapStateToProp = (state) => {

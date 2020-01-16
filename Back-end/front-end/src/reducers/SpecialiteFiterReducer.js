@@ -1,4 +1,4 @@
-import { SET_SPECIALITE_FILTER, SET_VILLE_FILTER } from '../actions/types';
+import { SET_SPECIALITE_FILTER} from '../actions/types';
 
 
 

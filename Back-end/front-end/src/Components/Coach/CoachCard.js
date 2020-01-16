@@ -16,8 +16,8 @@ const CoachCard = props => {
                             <span className="card-title"> <h5>{props.coach.Ville}</h5></span>
                         </div>
                         <div className="card-action">
-                        <Link  to={`/Description/${props.coach.id}`}>Plus D'info </Link>
-                        <Link  to={`/Feedback/${props.coach.id}`}> Feedback</Link>
+                        <Link  to={`/Description/${props.coach._id}`}>Plus D'info </Link>
+                        <Link  to={`/Feedback/${props.coach._id}`}> Feedback</Link>
                         </div>
                     </div>
                 </div>
