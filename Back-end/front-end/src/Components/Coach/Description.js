@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './stylecoach.css';
+import CommentsForm from './CommentsForm';
+
+
 class Description extends Component {
     constructor(props) {
         super(props)
@@ -10,7 +13,7 @@ class Description extends Component {
     }
     componentDidMount() {
         this.setState(
-            this.props.coachs.filter(el => el.id == this.props.match.params.id)[0]
+            this.props.coachs.filter(el => el._id == this.props.match.params.id)[0]
         )
     }
     render() {
@@ -35,7 +38,8 @@ class Description extends Component {
                         <div class='col-md-6'>
                             <img class='img-responsive img-thumbnail img' src={this.state.Image} alt='Coach Coachini' width= "540px" height="540px"/>
                             <div >
-                            <Link className="btn btn-info" to ='/CommentsForm'>Ajouter votre avis :lunettes_de_soleil: </Link>
+
+                            {/* <Link className="btn btn-info" to ='/CommentsForm'>Ajouter votre avis</Link> */}
                         </div>
                         </div>
                         <div class='col-md-6'>
@@ -71,6 +75,8 @@ class Description extends Component {
                                     </div>
                                 </div>
                             </li>
+
+                            <CommentsForm coachId={this.props.match.params.id}/>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,7 @@
 import {ADD_COMMENT} from '../actions/types';
 
-const initialState = [
-    {
-        name: "",
-        text: ""
-    }
-]
+
+const initialState = []
 
 
 const CommentsReducer = (state = initialState, action) => {

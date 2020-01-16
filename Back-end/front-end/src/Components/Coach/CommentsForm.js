@@ -7,6 +7,8 @@ import uuid from 'uuid';
 class CommentsForm extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+        }
     }
 
     handleState = e => {
@@ -32,9 +34,9 @@ class CommentsForm extends Component {
                 <input
                     type="button"
                     value="Comment "
-                    onClick={() => { this.props.addcomment({...this.state , id : uuid(), idCoach: this.props.match.params.id}) }}
+                    onClick={() => { this.props.addcomment({...this.state, id: uuid() , idCoach : this.props.coachId})}}
                 />
-                <CommentList/>
+                <CommentList idCoach={this.props.coachId}/>
             </div>
         );
     }
@@ -46,6 +48,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-
 export default connect(null, mapDispatchToProps)(CommentsForm);
-
